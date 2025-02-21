@@ -247,9 +247,9 @@ export const Contact = () => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-    emailjs.init("4MpzEzT4yDBHZ5tgC");
+    emailjs.init("NMi4d5HgZzVCF8JX8");
     emailjs
-      .sendForm("service_f14u26i", "template_5y4b3td", e.target)
+      .sendForm("service_7q06bfg", "template_5y4b3td", e.target)
       .then(() => {
         setAlertMessage("Mensaje enviado con éxito.");
         setAlertType("success");

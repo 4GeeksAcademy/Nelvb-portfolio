@@ -32,7 +32,7 @@ def verify_email():
         return jsonify({"status": "error", "message": "Formato de correo inválido"}), 400
 
     # API Key de MailboxLayer desde variable de entorno
-    api_key = os.getenv('MAILBOXLAYER_API_KEY', '00d91ca1ac283381b18482c46f962261')  # Cambia a tu clave válida
+    api_key = os.getenv('MAILBOXLAYER_API_KEY', '00d91ca1ac283381b18482c46f962261')  # Mi clave válida
     url = f"http://apilayer.net/api/check?access_key={api_key}&email={email}&smtp=1&format=1"
 
     try:
